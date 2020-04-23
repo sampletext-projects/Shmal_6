@@ -3,7 +3,9 @@ using namespace std;
 
 double V(double r, double h)
 {
-	return 3.14159265 * r * r * h; // pi * r^2 * h
+	// pi * r^2 * h
+	double v = 3.14159265 * r * r * h;
+	return v;
 }
 
 int main()
@@ -20,7 +22,7 @@ int main()
 
 	double v1 = V(r1, h1);
 	double v2 = V(r2, h2);
-	
+
 	if (v1 > v2)
 	{
 		cout << "1 больше\n";
